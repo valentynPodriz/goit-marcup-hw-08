@@ -1,0 +1,11 @@
+body {
+    font-family: var(--main-font-famaly);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--primary-white-color);
+
+    &.no-scroll {
+            overflow: hidden;
+        }
+}

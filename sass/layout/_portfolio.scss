@@ -1,0 +1,69 @@
+
+
+.list-button {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center
+}
+
+.item-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.card-set-link {
+    display: block;
+    flex-basis: calc((100% - 30px * 3) / 3);
+    margin: 15px;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+
+
+
+
+.wrapper {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
+
+}
+
+
+
+
+.title-portfolio {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 5px;
+
+    color: #212121;
+}
+
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color)
+}
+
+
+
+.btn-portfolio.active {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}

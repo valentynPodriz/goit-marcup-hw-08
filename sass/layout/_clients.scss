@@ -1,0 +1,52 @@
+.title-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.our-clients {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            fill: #2196F3;
+            border: 1px solid #2196F3;
+        }
+}
+
+
+
+.clients-icon {
+    fill: currentColor;
+
+}

@@ -1,0 +1,27 @@
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            fill: #FFFFFF;
+            background-color: #2196F3;
+        }
+}
+
+
+
+.socil-media-icon {
+    fill: currentColor;
+
+}

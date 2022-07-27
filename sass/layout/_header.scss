@@ -3,15 +3,67 @@
 }
 
 
+
+.header__container {
+display: none;
+
+
+@media screen and (min-width: 768px) {
+        display: flex;
+align-items: center;
+    }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+    
+        }
+}
+
+
+    
+
+ 
+
+.mobile-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__btm {
+    background-color: var(--primary-white-color);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .header-nav {
     display: flex;
     align-items: center;
     margin-right: auto;
-}
 
-.header__container {
-    display: flex;
-    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        
+         margin-top: 32px;
+         margin-bottom: 32px;
+        }
+
+                @media screen and (min-width: 1200px) {
+                  margin-right:auto;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
 }
 
 .container-address {
@@ -24,6 +76,27 @@
 
 }
 
+.container-contact {
+    
+@media screen and (min-width: 768px) {
+  width: 160px;
+  text-align: right;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+
+
+
+  
+ }
+@media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: end;
+    width: 333px;
+    gap: 30px;
+    }
+
+}
 .icon-header {
     margin-right: 10px;
 }
@@ -48,7 +121,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    padding: 32px 0;
+    
 
     transition-property: color;
     transition-duration: 250ms;
@@ -58,11 +131,14 @@
 }
 
 .header-contact {
+
     color: var(--secondary-text-color);
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   
 }
 
 .header-link:hover,
@@ -79,11 +155,9 @@
     width: 16px;
     height: 12px;
     fill: #AFB1B8;
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus {
             fill: var(--accent-color)
@@ -102,7 +176,7 @@
     content: "";
 
     position: absolute;
-    bottom: 0;
+    bottom: -39px;
     left: 0;
     display: inline-block;
     width: 100%;

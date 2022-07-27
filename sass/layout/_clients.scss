@@ -1,33 +1,22 @@
-.title-clients {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 50px;
-}
-
+ 
 .our-clients {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+    flex-wrap: wrap;       
+    
+        }
 }
 
-.social-media {
-    display: flex;
-    justify-content: center;
-}
-
-.clients-item:not(:last-child) {
-    margin-right: 30px;
-
-}
 
 .clients-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
@@ -42,6 +31,16 @@
             fill: #2196F3;
             border: 1px solid #2196F3;
         }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+      
+  }
+        
+  @media screen and (min-width: 1200px) {
+     width: 170px;
+     
+     }
 }
 
 

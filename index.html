@@ -23,6 +23,7 @@
 	<!-- шапка -->
 	<header class="header">
 		<div class="container header__container">
+
 			<nav class="header-nav">
 				<a class="logo link" href="./index.html">
 					<span class="accent">Web</span>Studio</a>
@@ -35,21 +36,34 @@
 			</nav>
 
 
-			<ul class="contact-list list header-list">
-				<li class="contact-item">
-					<a class="header-contact link" href="mailto:info@devstudio.com"><svg class="contacts-header-icon"
-							width="16" height="12">
-							<use href="./images/icons-svg.svg#icon-envelope"></use>
-						</svg>
-						info@devstudio.com</a>
-				</li>
-				<li class="contact-item"><a class="header-contact link header-link-icon" href="tel:+380961111111"><svg
-							class="contacts-header-icon" width="10" height="16">
-							<use href="./images/icons-svg.svg#icon-smartphone"></use>
-						</svg>
-						+38 096 111 11 11</a>
-				</li>
-			</ul>
+			<div class="container-contact">
+				<a class="header-contact link" href="mailto:info@devstudio.com"><svg class="contacts-header-icon"
+						width="16" height="12">
+						<use href="./images/icons-svg.svg#icon-envelope"></use>
+					</svg>
+					info@devstudio.com</a>
+
+				<a class="header-contact link header-link-icon" href="tel:+380961111111"><svg
+						class="contacts-header-icon" width="10" height="16">
+						<use href="./images/icons-svg.svg#icon-smartphone"></use>
+					</svg>
+					+38 096 111 11 11</a>
+			</div>
+		</div>
+
+		<!-- mobile menu -->
+		<div class="mobile-menu-container container">
+			<a class="logo link" href="./index.html">
+				<span class="accent">Web</span>Studio</a>
+			<button class="mobile-menu__btm" type="button">
+				<svg class="mobile-menu__ikon" width="24" height="16">
+					<use class="mobile-menu__burger" href="./images/icons-svg.svg#icon-phone-menu"></use>
+
+					<use class="mobile-menu__close" href="./images/icons-svg.svg#icon-phone-close"></use>
+				</svg>
+			</button>
+			<!--мобільне меню -->
+
 		</div>
 	</header>
 
@@ -126,6 +140,40 @@
 
 			</div>
 		</div>
+		<!--mobile menu -->
+		<div class="mobile-menu">
+			<ul class="mobile-menu__nav list">
+				<li class="mobile-menu__nav__item"><a class="mobile-menu__nav__link link  current"
+						href="./index.html">Студия</a>
+				</li>
+				<li class="mobile-menu__nav__item"><a class="mobile-menu__nav__link link"
+						href="./portfolio.html">Портфолио</a>
+				</li>
+				<li class="mobile-menu__nav__item"><a class="mobile-menu__nav__link link" href="">Контакты</a></li>
+			</ul>
+			<ul class="list mobile-menu__contacts">
+				<li class="mobile-menu__contacts__item">
+					<a class="mobile-menu__contact__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				</li>
+				<li class="mobile-menu__contacts__item">
+					<a class="mobile-menu__contact__link link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+				</li>
+			</ul>
+			<ul class="list mobile-menu__social">
+				<li class="mobile-menu__social__item">
+					<a class="mobile-menu__social__link link" href="">Instagram</a>
+				</li>
+				<li class="mobile-menu__social__item">
+					<a class="mobile-menu__social__link link" href="">Twitter</a>
+				</li>
+				<li class="mobile-menu__social__item">
+					<a class="mobile-menu__social__link link" href="">Facebook</a>
+				</li>
+				<li class="mobile-menu__social__item">
+					<a class="mobile-menu__social__link link" href="">Facebook</a>
+				</li>
+			</ul>
+		</div>
 
 
 		<!-- Особенности -->
@@ -134,24 +182,24 @@
 				<h2 class="visually-hidden">Особенности</h2>
 				<ul class="list work__list">
 					<li class="work__item  item-icon icon-antenna">
-						<h3 class="abuat__title">Внимание к деталям</h3>
+						<h3 class="work__title">Внимание к деталям</h3>
 						<p class="work__text">Идейные соображения, а также начало повседневной работы по формированию
 							позиции.</p>
 					</li>
 					<li class="work__item item-icon icon-clock">
-						<h3 class="abuat__title">Пунктуальность</h3>
+						<h3 class="work__title">Пунктуальность</h3>
 						<p class="work__text">
 							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 						</p>
 					</li>
 					<li class="work__item item-icon icon-diagram">
-						<h3 class="abuat__title">Планирование</h3>
+						<h3 class="work__title">Планирование</h3>
 						<p class="work__text">
 							Равным образом консультация с широким активом в значительной степени обуславливает.
 						</p>
 					</li>
 					<li class="work__item item-icon icon-astronaut">
-						<h3 class="abuat__title">Современные технологии</h3>
+						<h3 class="work__title">Современные технологии</h3>
 						<p class="work__text">Значимость этих проблем настолько очевидна, что реализация плановых
 							заданий.
 						</p>
@@ -192,7 +240,7 @@
 			</div>
 		</section>
 
-		<!-- команда -->
+		<!--команда-->
 		<section class="section team-section">
 			<div class="container">
 				<h2 class="title-section">Наша команда</h2>
@@ -307,7 +355,7 @@
 		<!-- нашы клиенты -->
 		<section class="section">
 			<div class="container">
-				<h2 class="title-clients">Постоянные клиенты</h2>
+				<h2 class="title-section">Постоянные клиенты</h2>
 				<ul class="list our-clients">
 					<li class="clients-item"> <a href="" class=" link clients-link"><svg width="41" height="45">
 								<use href="./images/icons-svg.svg#icon-group-1"></use>
@@ -337,6 +385,7 @@
 	<footer class="footer-section">
 
 		<div class="container footer-container">
+
 			<div class="container-address-footer">
 				<a class="logo link logo-footer" href="./index.html">
 					<span class="accent">Web</span>Studio</a>
@@ -349,7 +398,7 @@
 								г. Киев, пр-т Леси Украинки, 26
 							</a>
 						</li>
-						<li class="contact-item footer-item">
+						<li class="footer-item">
 							<a class="footer-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 						</li>
 						<li class="footer-item item-pad"><a class="footer-contact link"
@@ -360,49 +409,47 @@
 			</div>
 
 			<div class="container-social-ikon">
-				<h2 class="title-footer"><strong>присоединяйтесь</strong></h2>
-				<ul class="list list-ikon-footer">
-					<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
-								height="20">
-								<use href="./images/icons-svg.svg#icon-instagram"></use>
-							</svg></a></li>
-					<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
-								height="20">
-								<use href="./images/icons-svg.svg#icon-twitter"></use>
-							</svg></a></li>
-					<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
-								height="20">
-								<use href="./images/icons-svg.svg#icon-facebook"></use>
-							</svg></a></li>
-					<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
-								height="20">
-								<use href="./images/icons-svg.svg#icon-linkedin"></use>
-							</svg></a></li>
-				</ul>
+				<h2 class="title-footer"><strong>присоединяйтесь</strong></h3>
+					<ul class="list list-ikon-footer">
+						<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
+									height="20">
+									<use href="./images/icons-svg.svg#icon-instagram"></use>
+								</svg></a></li>
+						<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
+									height="20">
+									<use href="./images/icons-svg.svg#icon-twitter"></use>
+								</svg></a></li>
+						<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
+									height="20">
+									<use href="./images/icons-svg.svg#icon-facebook"></use>
+								</svg></a></li>
+						<li class=" social-media-item"> <a href="" class="link link-ikon-footer"><svg width="20"
+									height="20">
+									<use href="./images/icons-svg.svg#icon-linkedin"></use>
+								</svg></a></li>
+					</ul>
+
 			</div>
+
+
 			<!-- footer form -->
-			<div class="footer-form">
+			<div class="container-footer-form">
 				<strong class="title-footer title-footer-form">Подпишитесь на рассылку</strong>
 				<form>
 
 					<div class="form">
-						<input class="input-footer-form" id="email" type="email" placeholder="E-mail" />
-						<button class="footer-button btn-footer-form" type="submit">Подписаться</button>
-						<svg class="icon-send" width="24px" height="24px">
-							<use href="./images/icons-svg.svg#icon-icon-send"></use>
-						</svg>
+						<input class="input-footer-form" id="email" type="email" placeholder="E-mail">
+						<button class="footer-button" type="submit">Подписаться</button>
 					</div>
 
 				</form>
 			</div>
-
-
 		</div>
-
 
 	</footer>
 
 	<script src="./js/modal.js"></script>
+	<!-- <script src="./js/menu.js"></script> -->
 
 </body>
 

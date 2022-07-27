@@ -1,10 +1,10 @@
 /* icon work start */
 
 .item-icon::before {
-    display: inline-block;
+    display: block;
     content: "";
     height: 120px;
-    width: 270px;
+    width: 100%;
     border-radius: 4px;
     background: #F5F4FA;
     margin-bottom: 30px;
@@ -39,13 +39,33 @@
 /* section work */
 
 .work__item {
-    width: 270px;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+   
 }
 
 .work__list {
+
+@media screen and (min-width: 768px) {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+@media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    }
+
+
 }
 
 .work__title {
@@ -53,6 +73,8 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+   text-align: center;
+   
 }
 
 .work__text {

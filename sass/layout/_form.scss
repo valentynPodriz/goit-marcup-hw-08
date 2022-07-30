@@ -144,15 +144,28 @@
 }
 
 .checkbox-agreament {
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: var(--secondary-text-color);
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 .policy-link {
     display: inline;
     color: var(--accent-color);
     margin-left: 3px;
+    font-size: 12px;
+    line-height: 1.16;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 

@@ -4,11 +4,22 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+ 
+}
 
-    @media screen and (min-width: 768px) {
-    flex-wrap: wrap;       
-    
-        }
+.clients-item{ 
+flex-basis: calc((100% - 30px)/2);
+
+@media screen and (min-width: 768px){       
+flex-basis: calc((100% - 60px)/3);
+}
+
+@media screen and (min-width: 1200px) {
+   width: 170px;
+   flex-basis: auto;
+}
+
+
 }
 
 
@@ -16,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    
     height: 92px;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
@@ -32,20 +43,9 @@
             border: 1px solid #2196F3;
         }
 
-  @media screen and (min-width: 768px) {
-    width: 226px;
-      
-  }
-        
-  @media screen and (min-width: 1200px) {
-     width: 170px;
-     
-     }
 }
 
 
 
 .clients-icon {
-    fill: currentColor;
-
-}
+    fill: currentColor}

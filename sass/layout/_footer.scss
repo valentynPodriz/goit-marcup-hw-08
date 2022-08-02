@@ -18,9 +18,9 @@
   
 @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
     text-align: left;
-
+    
 
 }
 }
@@ -32,8 +32,20 @@
 
 .logo-footer {
 	display: block;
+	font-family: var(--second-font-famaly);
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	color: var(--primary-white-color);
 	margin-right: 0px;
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 1200px) {
+				font-size: 26px;
+				line-height: 1.19;
+			
+			}
    
 }
 
@@ -105,15 +117,11 @@
 	margin-bottom: 60px;
 
         @media screen and (min-width: 1200px) {
-            margin-right: 70px;
+          
             text-align: left;
 			margin-bottom: 0px;
         }
 
-				   @media screen and (min-width: 1200px) {
-				width: 170px;
-				flex-basis: auto;
-				   }
 
 }
 
@@ -124,7 +132,7 @@
 
     @media screen and (min-width: 1200px) {
             text-align: left;
-            margin-right: 93px; 
+            // margin-right: 93px; 
 			margin-bottom: 0px;
         }
 
@@ -233,6 +241,8 @@ display: block;
 		margin-bottom: 0px;
 	}
 }
+
+
 
 
 

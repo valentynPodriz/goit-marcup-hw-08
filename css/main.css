@@ -232,6 +232,7 @@ img {
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .portfolio-overlay {
@@ -257,7 +258,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 63px 24px;
+  padding: 77px 24px;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   background-color: rgba(33, 150, 243, 0.9);
@@ -355,6 +356,7 @@ img {
           transition-duration: 800ms;
   -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
           transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 2000;
 }
 
 .backdrop.is-hidden {
@@ -371,7 +373,7 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  z-index: 100;
+  z-index: 3000;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
